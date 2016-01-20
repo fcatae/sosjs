@@ -11,6 +11,7 @@
 
 #include <windows.h>
 
-#define KDEXT_64BIT 
+#define KDEXT_64BIT 1
+
 #include "inc/wdbgexts.h" 
 #include "inc/dbgeng.h" 

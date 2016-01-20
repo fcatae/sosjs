@@ -1,12 +1,9 @@
 #include "stdafx.h"
 #include "sosjs.h"
 
-
 VOID WDBGAPI WinDbgExtensionDllInit(PWINDBG_EXTENSION_APIS lpExtensionApis, USHORT usMajorVersion, USHORT usMinorVersion)
 {
 	ExtensionApis = *lpExtensionApis;
-
-	dprintf("Hello world\n\n");
 
 	//HRESULT hResult = S_FALSE;
 
@@ -38,4 +35,9 @@ VOID WDBGAPI WinDbgExtensionDllInit(PWINDBG_EXTENSION_APIS lpExtensionApis, USHO
 LPEXT_API_VERSION WDBGAPI ExtensionApiVersion(void)
 {
 	return &g_ExtApiVersion;
+}
+
+DECLARE_API(help)
+{
+	dprintf("Hello world\n\n");
 }

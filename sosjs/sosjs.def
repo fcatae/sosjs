@@ -1,0 +1,6 @@
+LIBRARY SOSJS
+EXPORTS
+	WinDbgExtensionDllInit
+	ExtensionApiVersion
+	help
+
